@@ -51,9 +51,9 @@ public class MissionType {
             totalOffers++;
         }
         if (totalTime > 0 && timeTotal > 0)
-        {return name + "\n " + totalCompletions + " completion" + (totalCompletions == 1 ? "" : "s") + ", Avg Duration: " + (totalTime/timeTotal/60000) + " minutes\n";}
+        {return name + "\n " + totalCompletions + "\\" + totalOffers + " completion" + (totalCompletions == 1 ? "" : "s") + ", Avg Duration: " + (totalTime/timeTotal/60000) + " minutes\n";}
         else if (totalCompletions > 0)
-        {return name + "\n " + totalCompletions + " completion" + (totalCompletions == 1 ? "" : "s") + "\n";}
+        {return name + "\n " + totalCompletions + "\\" + totalOffers + " completion" + (totalCompletions == 1 ? "" : "s") + "\n";}
         else
         {return name + "\n Offered " + totalOffers + " time" + (totalOffers == 1 ? "" : "s") + "\n";}
     }
